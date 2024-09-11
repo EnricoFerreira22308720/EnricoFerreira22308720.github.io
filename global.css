@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 40px;
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGRldmVsb3BtZW50fGVufDB8fHx8MTY5NDA1NjcyMA&ixlib=rb-1.2.1&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.content-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul li::before {
+    content: "•";
+    color: #4A90E2;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #4A90E2;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-left: 400px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #357ABD;
+}
+
