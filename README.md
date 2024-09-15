@@ -43,3 +43,12 @@ In future labs, we will expand this webpage with:
 - More advanced frameworks like **React** and **Next.js**.
 
 Stay tuned for more updates as we continue learning and developing web interfaces!
+
+## Feedback
+
+### Lab 1
+
+Olá! O trabalho está muito avançado, mas nos próximos laboratórios apenas podemos aplicar os conteúdos dados nas aulas.
+
+Desta forma vamos começar com projetos mais simples e vamos depois começar a aplicar conceitos mais avançados!
+
