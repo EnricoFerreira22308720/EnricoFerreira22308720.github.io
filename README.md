@@ -52,3 +52,52 @@ Olá! O trabalho está muito avançado, mas nos próximos laboratórios apenas p
 
 Desta forma vamos começar com projetos mais simples e vamos depois começar a aplicar conceitos mais avançados!
 
+### Lab 2
+
+Excelente trabalho. Bom uso do HTML semântico.
+
+Na lista no info.html devemos colocar um cabeçalho antes da lista:
+
+```html
+<ol>
+    <li>Architectural Innovation: After World War II, Rotterdam was heavily bombed, leading to a rebuilding effort that embraced modern architecture. The city is known for its striking and innovative buildings, including the Cube Houses (Kubuswoningen) and the Markthal, a massive indoor market with a colorful ceiling mural.</li>
+    <li>Largest Port in Europe: Rotterdam is home to one of the largest and busiest ports in the world, often referred to as the "Gateway to Europe." The port plays a crucial role in global trade and logistics.</li>
+    <li>Vibrant Cultural Scene: Rotterdam boasts a rich cultural scene with numerous museums, galleries, and theaters. The Kunsthal and the Boijmans Van Beuningen Museum are two prominent art institutions in the city.</li>
+    <li>Green Spaces: Despite its modernity, Rotterdam places a strong emphasis on green spaces and sustainability. The city features several parks and green areas, such as the Kralingse Bos and the Het Park, providing residents and visitors with plenty of opportunities for outdoor activities.</li>
+    <li>Rotterdam’s Floating Pavilion: The city is known for its unique Floating Pavilion, an innovative structure designed to float on water. It serves as a venue for exhibitions, conferences, and events, showcasing Rotterdam's commitment to sustainable and creative architecture.</li>
+</ol>
+```
+
+```html
+<h3>Curiosidades</h3>
+<ol>
+    <li>Architectural Innovation: After World War II, Rotterdam was heavily bombed, leading to a rebuilding effort that embraced modern architecture. The city is known for its striking and innovative buildings, including the Cube Houses (Kubuswoningen) and the Markthal, a massive indoor market with a colorful ceiling mural.</li>
+    <li>Largest Port in Europe: Rotterdam is home to one of the largest and busiest ports in the world, often referred to as the "Gateway to Europe." The port plays a crucial role in global trade and logistics.</li>
+    <li>Vibrant Cultural Scene: Rotterdam boasts a rich cultural scene with numerous museums, galleries, and theaters. The Kunsthal and the Boijmans Van Beuningen Museum are two prominent art institutions in the city.</li>
+    <li>Green Spaces: Despite its modernity, Rotterdam places a strong emphasis on green spaces and sustainability. The city features several parks and green areas, such as the Kralingse Bos and the Het Park, providing residents and visitors with plenty of opportunities for outdoor activities.</li>
+    <li>Rotterdam’s Floating Pavilion: The city is known for its unique Floating Pavilion, an innovative structure designed to float on water. It serves as a venue for exhibitions, conferences, and events, showcasing Rotterdam's commitment to sustainable and creative architecture.</li>
+</ol>
+```
+
+Podemos até criar uma section:
+
+
+```html
+<section>
+    <h3>Curiosidades</h3>
+    <ol>
+        <li>Architectural Innovation: After World War II, Rotterdam was heavily bombed, leading to a rebuilding effort that embraced modern architecture. The city is known for its striking and innovative buildings, including the Cube Houses (Kubuswoningen) and the Markthal, a massive indoor market with a colorful ceiling mural.</li>
+        <li>Largest Port in Europe: Rotterdam is home to one of the largest and busiest ports in the world, often referred to as the "Gateway to Europe." The port plays a crucial role in global trade and logistics.</li>
+        <li>Vibrant Cultural Scene: Rotterdam boasts a rich cultural scene with numerous museums, galleries, and theaters. The Kunsthal and the Boijmans Van Beuningen Museum are two prominent art institutions in the city.</li>
+        <li>Green Spaces: Despite its modernity, Rotterdam places a strong emphasis on green spaces and sustainability. The city features several parks and green areas, such as the Kralingse Bos and the Het Park, providing residents and visitors with plenty of opportunities for outdoor activities.</li>
+        <li>Rotterdam’s Floating Pavilion: The city is known for its unique Floating Pavilion, an innovative structure designed to float on water. It serves as a venue for exhibitions, conferences, and events, showcasing Rotterdam's commitment to sustainable and creative architecture.</li>
+    </ol>
+</section>
+```
+
+2. Devemos ser mais explicativos no texto alternativo nas imagens e evitar usar:
+
+```html
+<img src="images/cheapSmall.jpg" alt="City2">
+<img src="images/depositeSmall.jpg" alt="City3">
+```
