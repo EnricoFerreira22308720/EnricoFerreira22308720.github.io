@@ -109,13 +109,32 @@ a.btn {
     font-size: 1.5em;
     text-decoration: none;
     border-radius: 8px;
-    margin-top: 100px;
-    margin-left: 400px;
     font-weight: bold; 
     transition: background-color 0.3s ease;
 }
+.grid nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 2rem -9rem;
+}
+
+.grid nav a {
+    display: block;
+    padding: 20px;
+    background-color: #4A90E2;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.grid nav a:hover {
+    background-color: #e0e0e0#4A90E2;
+}
 
 a.btn:hover {
-    background-color: #357ABD;
+    background-color: #4A90E2;
 }
 
