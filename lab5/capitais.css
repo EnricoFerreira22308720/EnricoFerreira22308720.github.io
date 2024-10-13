@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #9a9ea2;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a:last-child {
+    background-color: #000000;
+    padding: 0px 20px;
+    border-radius: 15px;
+}
+
+#poema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: #a5d8e9;
+    color: #000;
+    text-align: center;
+}
+
+#poema p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#paisagem {
+    position: relative;
+    width: 100vw;
+}
+
+.image-container {
+    position: relative;
+    width: 100vw;
+}
+
+.image-container img {
+    width: 100vw;
+    height: auto;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+    padding: 5px;
+}
+
+.photo-credit a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.photo-credit a:hover {
+    text-decoration: underline;
+}
+
+
+#cidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 20px;
+}
+
+#cidades section {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 15px; /* Rounded corners for some sections */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e0e0e0; /* Light background */
+    transition: background-color 0.3s ease;
+}
+
+#cidades section:hover {
+    background-color: #d1d1d1; /* Slightly darker on hover */
+}
+
+#cidades img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#cidades div {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%; /* Ensures div matches image height */
+}
+
