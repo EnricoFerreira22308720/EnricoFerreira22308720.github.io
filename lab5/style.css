@@ -11,24 +11,42 @@ header {
     padding: 0.5rem;
     text-align: center;
 }
+
 nav {
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: rgb(61, 61, 61);
-    border-radius: 20px;
-    max-width: 100%;
+    background-color: #f0f0f0;
 }
 nav a {
-    color: black;
-    background-color: rgb(222, 221, 221);
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
     display: inline-block;
 }
+nav a:hover {
+    color: #007bff;
+}
+nav a:hover::before {
+    color: #007bff;
+}
+nav a::before {
+    content: "»";
+    color: transparent;
+    transition: color 0.3s ease;
+    margin-right: 5px;
+}
+nav a::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover::after {
+    background-color: #007bff;
+}
+
+
+
+
 section a {
     color: black;
     background-color: rgb(222, 221, 221);
@@ -40,10 +58,7 @@ section a {
     font-weight: bold;
     display: inline-block;
 }
-nav a:hover {
-    text-decoration: underline;
-    background-color: rgb(161, 161, 244);
-}
+
 
 main {
     background-color: #e0e0e0;
@@ -139,10 +154,10 @@ ol {
     list-style-type: none;
     padding-left: 0;
     font-family: 'Arial', sans-serif;
+    gap: 10px;
   }
   
   ol li {
-    margin: 2rem 1rem;
     counter-increment: item;
     margin-bottom: 10px;
     padding: 10px;
@@ -153,7 +168,6 @@ ol {
   }
   ol li a {
     font-weight: 800;
-    min-width: 200px;
     background-color: #f7f7f7;
   }
   
@@ -188,7 +202,22 @@ ol {
     font-weight: 600;
     font-size: 20px;
 }
+.picture-item {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 13px 13px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: zoom-in; /* Adiciona o cursor zoom-in aqui */
+}
 
+.picture-item:hover {
+    transform: scale(1.5);
+}
+* {
+    font-family: "Times New Roman", Times, serif;
+}
 @media (max-width: 768px) {
     nav a {
         font-size: 1rem;
