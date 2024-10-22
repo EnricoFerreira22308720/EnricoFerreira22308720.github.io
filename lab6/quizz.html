@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotterdam Quizz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rotterdam</h1>
+            <button class="menu-toggle" onclick="window.location.href='menu.html'">☰ Menu</button>
+            <nav class="nav-links">
+                <a href="../index.html"> Principal Page</a>
+                <a href="index.html">Home</a>
+                <a href="local.html">Local</a>
+                <a href="multimidia.html">Multimedia</a>
+                <a href="info.html">Info</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="travel.html">Travel</a>
+                <a href="pontosinteresse.html">Points of Interest</a>
+                <a href="capitais.html">Captals</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Quizz</h2>
+            <form method="get" action="https://postman-echo.com/get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required autofocus>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Rotterdam City Quiz</legend>
+
+                    <label for="visit">When did you last visit Rotterdam?</label>
+                    <input type="date" id="visit" name="visit" required>
+
+                    <label for="fav_place">What is your favorite place in Rotterdam?</label>
+                    <input type="text" id="fav_place" name="fav_place" placeholder="e.g. Erasmus Bridge" maxlength="50" required>
+
+                    <label>What color do you associate with Rotterdam?</label>
+                    <input type="color" id="color" name="color">
+
+                    <label>What is your favorite time to explore the city?</label>
+                    <input type="time" id="explore_time" name="explore_time" required>
+
+                    <label>What is the population of Rotterdam? (estimate)</label>
+                    <input type="number" id="population" name="population" min="1" max="1000000" required>
+
+                    <label>Rate Rotterdam's architecture on a scale from 1 to 10:</label>
+                    <input type="range" id="architecture" name="architecture" min="1" max="10" value="5">
+                    <label>Which landmarks have you visited? (Select all that apply)</label>
+                    <input type="checkbox" id="cube_houses" name="landmark" value="Cube Houses">
+                    <label for="cube_houses">Cube Houses</label>
+                    <input type="checkbox" id="erasmus_bridge" name="landmark" value="Erasmus Bridge">
+                    <label for="erasmus_bridge">Erasmus Bridge</label>
+                    <input type="checkbox" id="euromast" name="landmark" value="Euromast">
+                    <label for="euromast">Euromast Tower</label>
+
+                    <label>Which city feature do you like the most?</label>
+                    <input type="radio" id="port" name="city_feature" value="Port" required>
+                    <label for="port">Port</label>
+                    <input type="radio" id="architecture" name="city_feature" value="Architecture" required>
+                    <label for="architecture">Architecture</label>
+                    <input type="radio" id="parks" name="city_feature" value="Parks" required>
+                    <label for="parks">Parks</label>
+
+                    <label for="feedback">Any additional feedback on Rotterdam?</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts here..."></textarea>
+
+                    <label for="photo">Upload a photo of your favorite spot in Rotterdam:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Enrico Sagnelli - 2º Ano, Universidade Lusófona</p>
+        </footer>
+    </body>
+</html>

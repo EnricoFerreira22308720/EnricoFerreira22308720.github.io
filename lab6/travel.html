@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotterdam Travel</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rotterdam</h1>
+            <button class="menu-toggle" onclick="window.location.href='menu.html'">☰ Menu</button>
+            <nav class="nav-links">
+                <a href="../index.html"> Principal Page</a>
+                <a href="index.html">Home</a>
+                <a href="local.html">Local</a>
+                <a href="multimidia.html">Multimedia</a>
+                <a href="info.html">Info</a>
+                <a href="quizz.html">Quizz</a>
+                <a href="travel.html">Travel</a>
+                <a href="pontosinteresse.html">Points of Interest</a>
+                <a href="capitais.html">Captals</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Travel Intention Form</h2>
+            <form method="post" action="https://postman-echo.com/get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Information</legend>
+
+                    <label for="departure_date">Departure Date:</label>
+                    <input type="date" id="departure_date" name="departure_date" required>
+
+                    <label for="return_date">Return Date:</label>
+                    <input type="date" id="return_date" name="return_date" required>
+
+                    <label for="passengers">Number of Passengers:</label>
+                    <input type="number" id="passengers" name="passengers" min="1" placeholder="Enter the number of passengers" required>
+
+                    <label for="transport">Favorite Mode of Transportation:</label>
+                    <select id="transport" name="transport" required>
+                        <option value="car">Car</option>
+                        <option value="train">Train</option>
+                        <option value="plane">Airplane</option>
+                        <option value="bus">Bus</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="service">Service Type:</label>
+                    <input type="radio" id="basic" name="service" value="basic" required>
+                    <label for="basic">Basic</label>
+                    <input type="radio" id="premium" name="service" value="premium" required>
+                    <label for="premium">Premium</label>
+
+                    <label for="special_requests">Special Requests:</label><br>
+                    <textarea id="special_requests" name="special_requests" rows="4" cols="50" placeholder="Enter any special requests here..."></textarea>
+
+                    <label for="budget">Expected Budget (per person, per day):</label>
+                    <input type="number" id="budget" name="budget" min="1" placeholder="Enter expected budget" required>
+                </fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Enrico Sagnelli - 2º Ano, Universidade Lusófona</p>
+        </footer>
+    </body>
+</html>
