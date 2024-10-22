@@ -30,10 +30,10 @@ nav {
 }
 
 nav a {
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -43,8 +43,79 @@ nav a:hover {
 
 nav a:last-child {
     background-color: #000000;
-    padding: 20px 20px;
+    padding: 10px;
     border-radius: 15px;
+}
+
+/* Botão hambúrguer (escondido por padrão) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para o mobile */
+@media screen and (max-width: 768px) {
+    /* Mostrar o botão hambúrguer e esconder o menu padrão */
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none; /* Esconder o menu padrão em mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 100%;
+        background-color: #9a9ea2;
+        padding: 10px;
+    }
+
+    /* Mostrar o menu quando o botão hambúrguer for clicado */
+    #mobileMenu.show {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 15px;
+        min-width: 100%;
+        text-align: left;
+        border-top: 1px solid #ddd;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    nav a:hover {
+        background-color: #555;
+        color: white;
+    }
+}
+
+/* Animação contínua do título */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #fff;
+    }
+    50% {
+        transform: scale(1.2);
+        color: #000000;
+    }
+    100% {
+        transform: scale(1);
+        color: #fff;
+    }
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    animation: pulse 3s infinite ease-in-out;
 }
 
 #poema {
@@ -99,7 +170,6 @@ nav a:last-child {
     text-decoration: underline;
 }
 
-
 #cidades {
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +183,7 @@ nav a:last-child {
     width: 150px;
     height: 150px;
     margin: 10px;
-    border-radius: 15px; /* Rounded corners for some sections */
+    border-radius: 15px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -144,3 +214,81 @@ nav a:last-child {
     height: 100%; /* Ensures div matches image height */
 }
 
+/* Galeria de fotos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 300px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.transform-effect {
+    transform: rotate(5deg);
+}
+
+.transition-effect {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.transition-effect:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    /* Ajustar layout das seções */
+    #poema {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #cidades {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #cidades section {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 90%;
+    }
+
+    .parallax {
+        height: 300px;
+    }
+}
