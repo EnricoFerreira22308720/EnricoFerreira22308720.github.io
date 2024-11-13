@@ -48,17 +48,42 @@ background.addEventListener('input', function() {
 
 });
 
+if (!localStorage.getItem('counter')){
+    localStorage.setItem('counter', 0);
+}
 
-
-
-let val = 0;
 
 click_button.addEventListener('click', () =>{
-    val += 1;
-    number.textContent = val;
+    let counter = localStorage.getItem('counter');
+    counter ++;
+    localStorage.setItem('counter', counter);
+    number.textContent = counter;
 });
 
 
 selecter.addEventListener('change', function(){
     corpo.style.backgroundColor = this.value;
 });
+
+
+
+//LAB8..............EX6
+const form = document.querySelector('#userForm');
+const nameInput = document.querySelector('#name');
+const ageInput = document.querySelector('#age');
+const messageDisplay = document.querySelector('#message');
+
+form.onsubmit = (e) => {
+    e.preventDefault();
+    const userName = nameInput.value;
+    const userAge = ageInput.value;
+    messageDisplay.textContent = `Olá, o ${userName} tem ${userAge}!`;
+};
+
+const counterIncremental = document.querySelector('#counterIncremental');
+let val = 0;
+function count() {
+    val ++;
+    counterIncremental.textContent = `Olá, Estas aqui ha  ${val}!`;
+}
+setInterval(count, 1000);
