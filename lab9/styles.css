@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #6a0dad;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Products and Cart Sections */
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+#products, #cart {
+    
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#products h2, #cart h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+/* Cart Grid */
+.cart-grid {
+    display: flex;
+    gap: 10px;
+}
+
+/* Individual Product Styling */
+article {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #fafafa;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    border-radius: 4px;
+}
+
+article h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+article p {
+    color: #000000;
+    margin: 5px 0;
+}
+
+article p:nth-last-child(2) {
+    background-color: #ebe9e9;
+    text-align: left;
+    color: #000000;
+    margin: 5px 0;
+}
+
+article button {
+    position: absolute;
+    bottom: 20px;
+    width: 150px;
+    height: 30px;
+
+    left: 40%;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+article button:hover {
+    background-color: #520c6b;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
