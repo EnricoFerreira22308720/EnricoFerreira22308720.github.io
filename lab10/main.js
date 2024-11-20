@@ -13,8 +13,8 @@ function renderProducts() {
             <h3>${product.title}</h3>
             <img src="${product.image}">
             <p>Custo: ${product.price} €</p>
-            <button onclick="addToCart(${product.id})">+ Adicionar ao Cesto</button>
             <p>${product.description}</p>
+            <button onclick="addToCart(${product.id})">+ Adicionar ao Cesto</button>
         `;
 
         productList.appendChild(productArticle);

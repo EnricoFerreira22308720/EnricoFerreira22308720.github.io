@@ -112,20 +112,22 @@ article h3 {
 
 article p {
     color: #000000;
-    margin-top: 1rem;
+    margin: 5px 0;
 }
 
 article p:nth-last-child(2) {
     background-color: #ebe9e9;
     text-align: left;
     color: #000000;
-    margin-top: 2rem;
+    margin: 5px 0;
 }
 
 article button {
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 20px;
     width: 150px;
     height: 30px;
+
     left: 40%;
     background-color: #6a0dad;
     color: white;
