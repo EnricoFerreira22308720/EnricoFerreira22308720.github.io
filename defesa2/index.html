@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loja IT</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Explore Nossos Produtos</h2>
+        <section id="filters">
+            <span>Filtrar</span>
+            <select id="select_category">
+                <option value="Todas">Todas as categorias</option>
+            </select>
+            <span>Ordenar</span>
+            <select id="select_order">
+                <option value="default">Ordenar pelo preço</option>
+                <option value="asc">Crescente</option>
+                <option value="desc">Decrescente</option>
+            </select>
+            <span>Buscar</span>
+            <input type="text" id="search_product" placeholder="Digite para buscar">
+        </section>
+        <section id="produtos" class="product-grid"></section>
+    </main>
+    <aside>
+        <h2>Cesto de Compras</h2>
+        <button id="fullCarinho">Adicionar tudo ao carinho</button>
+        <section id="cesto" class="cart-grid"></section>
+        <h3 id="custoTotal">Custo Total: 0.00 €</h3>
+    </aside>
+    <section id="checkout">
+        <h3>Finalizar Compra</h3>
+        <p>És estudante do DEISI? <input type="checkbox" id="alunoDeisi"></p>
+        <p>Cupão de Desconto: <input type="text" id="cupao"></p>
+        <p>Nome <input type="text" id="name"></p>
+        <button id="botao">Comprar</button>
+        <div id="checkout-result"></div>
+    </section>
+    <footer>
+        <h3>Sobre Nós</h3>
+        <p>Loja fictícia criada para fins educativos.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
