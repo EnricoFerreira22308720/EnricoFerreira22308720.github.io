@@ -3,41 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Produtos</title>
+    <title>Loja Online</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Loja Online</h1>
-        <nav aria-label="Main navigation">
+        <h1>Loja IT</h1>
+        <nav>
             <ul>
-                <li><a href="#products">Produtos</a></li>
-                <li><a href="#cart">Cesto</a></li>
-                <li><a href="#footer">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+                <li><a href="#checkout">Checkout</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Selecione os seus Produtos</h2>
-        <section id="products">
-            <section id="product-list" class="product-grid">
-            </section>
+        <h2>Explore Nossos Produtos</h2>
+        <section id="filters">
+            <span>Filtrar</span>
+            <select id="select_category">
+                <option value="Todas">Todas as categorias</option>
+            </select>
+            <span>Ordenar</span>
+            <select id="select_order">
+                <option value="default">Ordenar pelo preço</option>
+                <option value="asc">Crescente</option>
+                <option value="desc">Decrescente</option>
+            </select>
+            <span>Buscar</span>
+            <input type="text" id="search_product" placeholder="Digite para buscar">
         </section>
-
-        <aside id="cart">
-            <h2>Cesto</h2>
-            <section id="cart-items" class="cart-grid">
-            </section>
-            <button onclick="clearCart()">Esvaziar Cesto</button>
-        </aside>
+        <section id="produtos" class="product-grid"></section>
     </main>
-
-    <footer id="footer">
+    <aside>
+        <h2>Cesto de Compras</h2>
+        <section id="cesto" class="cart-grid"></section>
+        <h3 id="custoTotal">Custo Total: 0.00 €</h3>
+        <button id="clear-cart">Esvaziar Cesto</button>
+    </aside>
+    <section id="checkout">
+        <h3>Finalizar Compra</h3>
+        <p>És estudante do DEISI? <input type="checkbox" id="alunoDeisi"></p>
+        <p>Cupão de Desconto: <input type="text" id="cupao"></p>
+        <button id="botao">Comprar</button>
+        <div id="checkout-result"></div>
+    </section>
+    <footer>
         <h3>Sobre Nós</h3>
-        <p>Esta é uma loja de demonstração. Todos os produtos e preços são fictícios e usados apenas para fins educativos.</p>
+        <p>Loja fictícia criada para fins educativos.</p>
     </footer>
-
-    <script src="produtos.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
